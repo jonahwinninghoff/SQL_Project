@@ -1,0 +1,76 @@
+Name,Potential_Climate_Denial,Sentiment_Level
+Jim Bridenstine,0.6,false
+Rep. Jimmy Panetta,0.5,false
+Jim McGovern,0.5,false
+Rep. Zoe Lofgren,0.5,false
+Governor Mark Dayton,0.5,false
+Senator Mazie Hirono,0.4,false
+Joe Barton,0.33,false
+Markwayne Mullin,0.33,false
+Senator Ted Cruz,0.33,false
+Rep. Frank Pallone,0.31,true
+Matt Cartwright,0.29,false
+Denny Heck,0.27,false
+Elizabeth Esty,0.25,false
+Rep. Barbara Lee,0.25,false
+Mike Doyle,0.25,false
+Carolyn  B. Maloney,0.25,false
+Sen. Lisa Murkowski,0.25,false
+Rep. Suzan DelBene,0.25,true
+Governor John Carney,0.25,false
+Mark DeSaulnier,0.25,false
+Rep. Susan Davis,0.22,false
+Jerry McNerney,0.2,true
+(((Rep. Nadler))),0.2,true
+Adriano Espaillat,0.2,true
+Rep.Grace Napolitano,0.2,true
+Rep. Jared Huffman,0.2,true
+Jim Inhofe,0.18,true
+Cory Booker,0.18,false
+TeamMoulton,0.17,true
+Rep. Keith Ellison,0.17,false
+Jared Polis,0.17,false
+Senator Cortez Masto,0.17,false
+D. Wasserman Schultz,0.17,false
+Judy Chu,0.14,true
+Rep. Diana DeGette,0.14,false
+Rep Frederica Wilson,0.14,false
+Rep. Donald McEachin,0.14,false
+Ann McLane Kuster,0.14,true
+Rep. Derek Kilmer,0.14,false
+Senator Dick Durbin,0.13,false
+Senator Angus King,0.12,false
+Raul M. Grijalva,0.11,false
+ChuckGrassley,0.11,false
+Bill Foster,0.11,true
+Devin Nunes,0.11,true
+Rep. Ro Khanna,0.11,false
+Martin Heinrich,0.1,false
+Sheldon Whitehouse,0.1,false
+John Garamendi,0.1,false
+Earl Blumenauer,0.09,false
+Rep. Brad Schneider,0.09,false
+Mike Quigley,0.08,false
+David Cicilline,0.08,false
+Amy Klobuchar,0.08,false
+Rep. Carlos Curbelo,0.08,false
+US Rep Brendan Boyle,0.08,false
+Kamala Harris,0.08,false
+Chellie Pingree,0.07,false
+Paul Tonko,0.07,true
+Sen. Maggie Hassan,0.07,false
+David E. Price,0.06,false
+Michael F. Bennet,0.06,false
+Bernie Sanders,0.06,false
+Dana Rohrabacher,0.06,true
+Suzanne Bonamici,0.06,true
+Sen Dianne Feinstein,0.06,true
+Senator Bob Casey,0.04,false
+Ed Markey,0.04,false
+Jerry Brown,0.04,true
+Brian Schatz,0.04,true
+Senator Jeff Merkley,0.04,false
+Gerry Connolly,0.03,false
+Senator Tom Carper,0.02,false
+Rep. Ted Lieu,0.02,false
+Rep. Don Beyer,0.02,false
