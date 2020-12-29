@@ -1,0 +1,89 @@
+---
+title: "Sentiment Analysis and Climate Denial Detection System"
+author: "Jonah Winninghoff"
+date: "12/14/20"
+output:
+  revealjs::revealjs_presentation:
+    theme: "white"
+    incremental: TRUE
+    center: TRUE	
+    showNotes: FALSE
+    reveal_options:
+      help: TRUE
+      controls: TRUE
+      controlsTutorial: TRUE
+      controlsLayout: "edges"
+      controlsBackArrows: "visible"
+      slideNumber: TRUE
+---
+
+
+## Data Objective {data-background=#EBFFEB}
+
+<div style="text-align: justify"> The Lobbyists4America institution expresses interest using data-driven approaches, which can help make their lobbying strategy more effective, by aligning their interests with and avoiding certain politicians. As a team, I would like for you to evaluate my text analytic approach. I use two Twitter and User datasets chosen by this institution in order to ensure that my answer to data questions focuses on climate change policies. 
+</div>
+
+## Data Challenge {data-background=#EBFFFC}
+
+<div style="text-align: justify"> Prior to further analysis, the data's challenges need to be addressed first. What these datasets lack are date datatype and classification. The column called created_at does not behave as a such, perhaps, due to decryption. Secondly, the classification is a binary datatype that can often be in use to describe qualitative observation. It does not exist. Nor do both datasets have like any click attributions. 
+
+Both datasets do not have all politicians tweeting about climate change-related topics. There are 324 out of 545 politicians who tweet about this topic. The number of their responses to certain individual or organization is small. </div>
+
+## Data Questions {data-background=#F3EBFF}
+
+<div style="text-align: justify"> Based on what both data dimensions tell, the most appropriate way to ask data questions is text analytics-oriented since the information in text is rich.
+</div>
+
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/Data_Question.png" width="1500" height="300" style="background:none; border:none; box-shadow:none;">
+
+# Data Methodology {data-background=#FFEBEB}
+
+Please look below.
+
+## Two Different Methods {data-background=#FFEBEB}
+<div style="text-align: justify"> There are two different methods that are required for these questions. The first method is to employ sentiment analysis while the second method is to build the climate denial detection system. The sentiment analysis is to systematically identify the subjective text and estimate the aggregated connotation of each text. The climate denial detection system is a machine learning responsible for systematically classifying the potential climate denial in each text. </div>
+
+## Sentiment Analysis {data-background=#FFEBEB}
+<div style="text-align: justify"> There are three steps for sentiment analysis: 
+</div>
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/Sentiment_Method.png" width="700" height="490" style="background:none; border:none; box-shadow:none;">
+
+## Climate Denial Detection System {data-background=#FFEBEB}
+<div style="text-align: justify"> There are three steps for climate denial detection system: 
+</div>
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/Climate_Denial_Detection.png" width="700" height="490" style="background:none; border:none; box-shadow:none;">
+
+# Result {data-background=#FFF5EB}
+
+## Sentiment Analysis {data-background=#FFF5EB}
+<div style="text-align: justify"> This calculation in Spark shows that t-score is 1.63 with degree of freedom equal to 203, which is only 0.02 apart from the critical value. Intuitively, the politicians using terms like "climate crisis", "combat climate change", or "climate action" have the less amount of negative sentiment than thoses using terms like "climate change", "global warming", or "changing climate." 
+</div>
+
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/inference.png" style="background:none; border:none; box-shadow:none;">
+
+## Climate Denial Validation {data-background=#FFF5EB}
+<div style="text-align: justify"> There are four different classification algorithms verified by the validation set. One from the following algorithms should be suitable for out-of-sample data, that is, without being overfitted. Because my interest is to ensure that a number of false positives is low, the Support Vector Machine is more suitable.
+</div>
+
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/formattable_classification.png" style="background:none; border:none; box-shadow:none;">
+
+## Climate Denial Cross-Validation {data-background=#FFF5EB}
+<div style="text-align: justify"> The Support Vector Machine algorithm shows the result verified by testing set that is also known as out-of-sample data. This cross-validation only occurs one time. Even though the accuracy is better than in-sample data, the specificity worsens by few percentage differences. Yet, since the sensitivity is essential, this result is satisfied.
+
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/testing.png" style="background:none; border:none; box-shadow:none;">
+
+## Climate Denial with Sentiment Analysis {data-background=#FFF5EB}
+<div style="text-align: justify"> The detection system is proved solidly to classify every text in the Twitter dataset. When the detection system completes its task, this dataset is imported to Spark and this computer-clustering framework composes the dataset by joining this dataset to sentiment scoring dataset with Twitter and User datasets using SQL. This plot can be seen below composed by this Spark dataset. </div>
+
+## Plot {data-background=#FFF5EB}
+
+<img src="/Users/jonahwinninghoff/Desktop/Portifolio/SQL_Project/Climate_Denial.png" style="background:none; border:none; box-shadow:none;">
+
+# Discussion {data-background=#FFFFEB}
+
+## Sentiment Analysis Evaluation {data-background=#FFFFEB}
+<div style="text-align: justify"> Even though the sentiment analysis approach particularly performs well, this approach remains concerning. For the statistical inference, the sentiment result can be arbitrary. The point estimation often contains the amount of skeptics. The linkage can change depending on time and multivariate environment. One relevant variable could alter the connotation of that. To understand the truer connotation of every text may require to learn more about deep learning approach. This approach is more accurate when the size of dataset is large. </div>
+
+## Detection System Evaluation {data-background=#FFFFEB}
+<div style="text-align: justify"> The out-of-sample data proves how well the classification algorithm is. The climate denial language some politicians use in their Twitter is assumed to have similar attributions that the ordinary people have toward climate change policies. This algorithm should not be that issue. However, this result classified by this algorithm should be taken in consideration due to the weak law of large number and Lindeberg-Levy Central Limit Theorem. When the number of tweets per politician grows larger, the algorithm becomes more consistent and, perhaps, its distribution turns into normality but if the assumption is that political condition is being static. For time being, this result has some errors. </div>
+
