@@ -7,7 +7,7 @@ All works have done using Databricks and R and please consider this as a portfol
 - All Databricks and R scripts can be found in **Scripts** file.
 - All tidy and raw datasets can be found in **Datasets** file.
 
-Please take your time to view this coding works. The Presentation.Rmd is self-explanatory. If you do not want to execute the Presentation.Rmd code to understand my work, please look up at this [website](https://rpubs.com/jonahwinninghoff/SQL_Final_Project).
+Please take your time to view this coding works. The Presentation.Rmd is self-explanatory. If you do not want to execute the Presentation.Rmd in R programming, please use this [website](https://rpubs.com/jonahwinninghoff/SQL_Final_Project) instead.
 
 
 </div>
